@@ -104,7 +104,7 @@ class SearchAgent:
 # =========================
 # ✅ LangChain: HF Runnable (Zephyr via chat_completion ✅)
 # =========================
-client = InferenceClient(model="HuggingFaceH4/zephyr-7b-beta", token=o.getenv("HF_TOKEN"))
+client = InferenceClient(model="HuggingFaceH4/zephyr-7b-beta", token=os.getenv("HF_TOKEN"))
 
 class HFClientRunnable(Runnable):
     def invoke(self, input, config=None, **kwargs):
