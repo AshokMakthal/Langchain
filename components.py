@@ -13,9 +13,6 @@ from dotenv import load_dotenv
 # Load variables from .env file
 load_dotenv()
 
-# HF_TOKEN ="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" 
-# WEATHER_API_KEY = "z9npOWJjBj2AM7FdwypgQHYtE43eGKej"     # Tomorrow.io API key
-
 
 TOMORROW_CODE_MAP = {
     0: "Unknown", 1000: "Clear", 1001: "Cloudy", 1100: "Mostly Clear",
